@@ -53,8 +53,7 @@ public class WiFiBroadcastReceiver extends BroadcastReceiver {
             } else {
                 // It's a disconnect
             }
-        } else if (WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION
-                .equals(action)) {
+        } else if (WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION.equals(action)) {
 
             WifiP2pDevice device = (WifiP2pDevice) intent
                     .getParcelableExtra(WifiP2pManager.EXTRA_WIFI_P2P_DEVICE);
